@@ -6,7 +6,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background:
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+    linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+  background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+  background-color: #840b2a;
 }
+
 header {
   width: 100%;
   height: 75px;
@@ -21,120 +32,33 @@ header {
   justify-content: center;
   align-items: center;
 }
+img {
+  width: 250px;
+}
+button {
+  padding: 10px;
+  border-radius: 10%;
+}
 
 .blogPost {
-  width: 75%;
+  width: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
 }
 .dogPic {
   padding: 5px;
 }
 
-#formCard {
-  position: relative;
-  width: 500px;
-  z-index: 1;
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  -o-perspective: 600px;
-  perspective: 600px;
-  margin:15px;
-}
-
-.formFront {
-  background-color: #97BDC4;
-  text-align: center;
-  color: #fff;
-  border: 2px solid #7A8B8B;
-  width: inherit;
-  height: inherit;
-  z-index: 900;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -o-transform: rotateX(0deg) rotateY(0deg);
-  transform: rotateX(0deg) rotateY(0deg);
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.formFront a {
-  color: #A52D2D;
-  font-weight: 400;
-}
-
-#formCard.flip .formFront {
-  z-index: 900;
-  -webkit-transform: rotateY(180deg);
-  -mox-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.formBack {
+.textContainer {
   display: block;
-  z-index: 800;
-  margin-top: -300px;
-  width: inherit;
-  height: inehrit;
-  box-sizing: border-box;
-  padding: 10px;
-  color: rgba(255, 0, 0, 0.5);
-  text-align: center;
-  background-color: #E9F0F1;
-  border: 8px solid #97BDC4;
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  -o-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-    -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
+  width: 75px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
-#formCard.flip .formBack{
-  z-index: 1000;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -o-transform: rotateX(0deg) rotateY(0deg);
-  transform: rotateX(0deg) rotateY(0deg);
-}
-
-body{
-	
-	background: 
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
-radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
-linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
-background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
-background-color: #840b2a;
-
-
-    font-size:1.6em;
-    text-align:center;
-    line-height:0.8em;
-    margin:0 0 0.2em 0;
-    font-weight:200
-	
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

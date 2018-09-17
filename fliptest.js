@@ -1,3 +1,3 @@
-function flip(){
-  document.getElementById("formCard").classList.toggle("flip");
-};
+function flip() {
+    $('.card').toggleClass('flipped');
+}
