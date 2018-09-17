@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="dogs.js"></script>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="fliptest.js"></script>
+    <link rel="stylesheet" type="text/css" href="fliptest.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,900&amp;subset=latin-ext" rel="stylesheet">
   </head>
-  <body onload="getDogs()">
-    <p>Good Dogs!</p>
-    <p id="ourdogs">dogs</p>
-    <p id="dogGif">dogs</p>
-    <img src= id="capt">
-    <img src="https://www.dogfoodinsider.com/wp-content/uploads/2015/01/Clicker-Training.jpg">
-      <div class="blogPost">
-    <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKncnD-N6PghCBqXTF238ERXcDAYjQnqfFr9aKY-zBl2Zae7T>
-    
-      <div class="textContainer">
-        <p>
-          Little ittle kibble and bibble
-        </p>
+  <body>
+    <header>
+      <h1 id="heading">3 Dog Day</h1>
+    </header>
+
+    <button onclick="flip()">Flip the Cards</button>
+    <section class="container">
+      <div class="card" onclick="flip()">
+        <div class="front">
+          <img src = "https://static1.squarespace.com/static/55fa227de4b0e6e5e6a76c52/5654b29be4b05e28e38281a0/568038394bf118911f008659/1478461792203/kamilopardali1.jpg?format=300w" class="center">
+        </div>
+        <div class="back">
+          <div class="textContainer">
+            <h2>Chachi</h2>
+            <p>Meet sweet Chachi! This sweet, 1 year old boy was found as a stray and taken to one of the highest-kill shelters in CA, where we scooped him up. This 13 lb kid is very shy, but once he continues to learn that humans can be pretty awesome he will continue to come out of his shell! He’s doing well in his foster home and although he’s cautious, once he’s in your arms he totally melts and we can’t wait to watch him continue to build his confidence.</p>
+          </div>
+        </div>
       </div>
-  </div>
-  <hr>
+    </section>
+
+<hr>
+    <section class="container">
+      <div class="card" onclick="flip()">
+        <div class="front">
+          <img src = "https://www.animalhub.com/wp-content/uploads/2014/08/dog-lice.jpg" class="center">
+        </div>
+        <div class="back">
+          <div class="textContainer">
+            <h2>ButterScotch</h2>
+            <p>Meet ButterScotch the smallest of her littermates. What she lacks for in size she makes up for in spunk. She is a happy, adventurous puppy just waiting to be loved. ButterScotch is 5.5 months old and will be a medium size adult with a low maintenance fur coat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card" onclick="flip()">
+        <div class="front"><img src = "https://s-media-cache-ak0.pinimg.com/originals/43/2d/8c/432d8cc44a39819452c65f69d9a4391b.jpg" class="center"></div>
+        <div class="back">
+          <div class="textContainer">
+            <h2>Zuzu</h2>
+            <p>Meet sweet Zuzu! This darling had a rough start to life. She was displaced on the streets after her family’s home in Mexico burned to the ground. Luckily, a Good Samaritan took her in and she finally made her way to us and is ready for her forever home!<br>
+            She gets along with other dogs and is just a sweet, energetic, goofy pup. SHe can be a little shy but quickly warms. We estimate her to be about 4-5 months old, and she's approximately 9 lbs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
