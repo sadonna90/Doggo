@@ -1,8 +1,8 @@
 .container {
   width: 40%;
-  height: 200px;
+  height: 230px;
   position: relative;
-  -webkit-perspective: 800px;
+  -webkit-perspective: 1000px;
   -moz-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
